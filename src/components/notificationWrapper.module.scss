@@ -1,0 +1,37 @@
+.wrapper {
+    width: 1440px;
+    display: block;
+}
+
+.notificationHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.unreadWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.unreadMsg {
+    width: 40px;
+    padding: 5px 2px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 85%, 26%);
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.title {
+    font-weight: 800;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.markAsRead {
+    color: hsl(219, 14%, 63%);
+    cursor: pointer;
+}

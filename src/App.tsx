@@ -1,12 +1,14 @@
 import React from 'react';
-import './App.css';
+import styles from './App.module.scss';
 import NotificationWrapper from './components/NotificationWrapper';
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <header className="App-header">
-        <NotificationWrapper/>
+        <main>
+          <NotificationWrapper/>
+        </main>
       </header>
     </div>
   );
