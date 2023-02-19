@@ -26,13 +26,13 @@ Users should be able to:
 
 **Desktop**
 ![Desktop](./assets/img/desktop.png)
-
+_____
 **Mobile**
 ![Mobile](./assets/img/mobile.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [live site](https://notifications-page-main-3ril.vercel.app/)
 
 ### Built with
 
