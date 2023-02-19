@@ -1,9 +1,8 @@
 .wrapper {
     width: 100%;
-    max-width: 1440px;
-    height: 990px;
-    padding: 35px 30px 0 32px;
-    margin-top: 20px;
+    max-width: 736px;
+    padding: 16px;
+    margin-top: 16px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 16px;
 }
@@ -22,21 +21,42 @@
 }
 
 .unreadMsg {
-    width: 40px;
-    padding: 5px 2px;
+    width: 20px;
+    padding: 3px;
     color: hsl(0, 0%, 100%);
     background-color: hsl(219, 85%, 26%);
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-left: 8px;
     font-weight: 800;
+    text-align: center;
 }
 
 .title {
-    font-weight: 800;
-    margin-right: 20px;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .markAsRead {
     color: hsl(219, 14%, 63%);
     cursor: pointer;
+    font-weight: 500;
 }
+
+.markAsRead:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: inherit;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .markAsRead {
+        font-size: 12px;
+    }
+  }

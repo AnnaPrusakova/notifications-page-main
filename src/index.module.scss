@@ -1,8 +1,7 @@
 body {
-  min-height: 990px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color:  hsl(210, 60%, 98%);
 }
@@ -17,7 +16,14 @@ code {
   src: local('Plus Jakarta Sans'), url(../../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf) format('woff');
 }
 
-p {
-  font-weight: 500;
-  font-size: 16px;
+main {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  body {
+      margin: 0;
+      place-items: initial;
+      background-color: #fff;
+  }
 }

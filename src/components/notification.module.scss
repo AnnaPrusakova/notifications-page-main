@@ -1,14 +1,25 @@
 .notificationWrapper {
-    margin: 10px 20px 0;
-    padding: 10px 5px;
-    background-color: hsl(210, 60%, 98%);
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    border-radius: 10px;
+    gap: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: hsl(210, 60%, 98%);
+}
+
+.notificationWrapper.isRead {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.avatar {
+    width: 48px;
+    padding: 10px;
+    align-self: flex-start;
 }
 
 .actionInfoWrapper {
+    position: relative;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
@@ -16,7 +27,8 @@
 }
 
 .info {
-    display: flex;
+    margin-bottom: 5px;
+    display: grid;
     align-items: center;
 }
 
@@ -24,6 +36,10 @@
     font-weight: bold;
     margin-right: 5px;
     cursor: pointer;
+}
+
+.author:hover, .reactType:hover, .groupType:hover {
+    color: hsl(219, 85%, 26%);
 }
 
 .action {
@@ -47,27 +63,44 @@
 }
 
 .timeFromNow {
+    margin-top: 5px;
     color:  hsl(219, 14%, 63%);
 }
 
 .unreadMarker {
-    width: 12px;
-    height: 12px;
-    margin-left: 10px;
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
     background-color: hsl(1, 90%, 64%);
     border-radius: 50%;
 }
 
 .messageType {
-    width: 520px;
-    padding: 20px;
+    padding: 16px;
     margin-top: 10px;
+    font-weight: 500;
     background-color: hsl(0, 0%, 100%);
     border: 1px solid hsl(205, 33%, 90%);
-    border-radius: 8px;
+    border-radius: 5px;
+    color: hsl(219, 14%, 63%);
     cursor: pointer;
 }
 
+.messageType:hover {
+    background-color: hsl(211, 68%, 94%);
+}
+
 .commentType {
+    margin-left: auto;
     cursor: pointer;
+}
+
+.postImg {
+    width: 50%;
+}
+
+@media (max-width: 480px) {
+.notificationWrapper {
+    font-size: 14px;
+}
 }

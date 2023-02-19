@@ -29,40 +29,40 @@ export const data = [
         isRead: false
     },
     {
-        avatar: "../../../assets/images/avatar-rizky-hasanuddin.webp",
+        avatar: "avatar-rizky-hasanuddin.webp",
         author: "Rizky Hasanuddin",
         type: TypeNotification.MESSAGE,
         action: "sent you a private message",
         attachtedTo: "",
         message: "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
         timeFromNow: "5 days ago",
-        isRead: false
+        isRead: true
     },
     {
-        avatar: "../../../assets/images/avatar-kimberly-smith.webp",
+        avatar: "avatar-kimberly-smith.webp",
         author: "Kimberly Smith",
         type: TypeNotification.COMMENT,
         action: "commented on your picture",
-        attachtedTo: "../../../assets/images/image-chess.webp",
+        attachtedTo: "image-chess.webp",
         timeFromNow: "1 week ago",
-        isRead: false
+        isRead: true
     },
     {
-        avatar: "../../../assets/images/avatar-nathan-peterson.webp",
+        avatar: "avatar-nathan-peterson.webp",
         author: "Nathan Peterson",
         type: TypeNotification.REACT,
         action: "reacted to your recent post",
         attachtedTo: "5 end-game strategies to increase your win rate",
         timeFromNow: "2 weeks ago",
-        isRead: false
+        isRead: true
     },
     {
-        avatar: "../../../assets/images/avatar-anna-kim.webp",
+        avatar: "avatar-anna-kim.webp",
         author: "Anna Kim",
         type: TypeNotification.GROUP,
         action: "left the group",
         attachtedTo: "Chess Club",
         timeFromNow: "2 weeks ago",
-        isRead: false
+        isRead: true
     }
 ]
