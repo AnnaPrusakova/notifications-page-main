@@ -26,8 +26,8 @@ const NotificationWrapper: React.FC<{}> = () => {
             <p className={styles.markAsRead}>Mark all as read</p>
         </div>
         <div>
-            {data.length > 0 && data.map((notification: NotificationItem) => (
-                <Notification notification={notification}/>
+            {data.length > 0 && data.map((notification: NotificationItem, i: number) => (
+                <Notification key={i} notification={notification}/>
             ))}
         </div>
     </div>);

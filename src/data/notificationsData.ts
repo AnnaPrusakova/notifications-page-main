@@ -2,7 +2,7 @@ import { TypeNotification } from "../dto/NotificationItem";
 
 export const data = [
     {
-        avatar: "../../../assets/images/avatar-mark-webber.webp",
+        avatar: "avatar-mark-webber.webp",
         author: "Mark Webber",
         type: TypeNotification.REACT,
         action: "reacted to your recent post",
@@ -11,7 +11,7 @@ export const data = [
         isRead: false
     },
     {
-        avatar: "../../../assets/images/avatar-angela-gray.webp",
+        avatar: "avatar-angela-gray.webp",
         author: "Angela Gray",
         type: TypeNotification.FOLLOW,
         action: "followed you",
@@ -20,7 +20,7 @@ export const data = [
         isRead: false
     },
     {
-        avatar: "../../../assets/images/avatar-jacob-thompson.webp",
+        avatar: "avatar-jacob-thompson.webp",
         author: "Jacob Thompson",
         type: TypeNotification.GROUP,
         action: "has joined your group",
